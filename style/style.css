@@ -2,6 +2,14 @@ body{
     background-color: black;
 }
 
+h1{
+   font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+  color: #ffffff !important; 
+}
+
 .navbar{
     background-color: black;
 }
@@ -26,6 +34,26 @@ font-family: "Lexend Exa", sans-serif;
   color: #ffffff !important; 
 }
 
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property */
+}
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 @media(min-width:992px){
 .navigation{
     display: flex;
