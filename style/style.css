@@ -16,6 +16,58 @@ h1{
   animation: animate-gradient 2.5s linear infinite;
 }
 
+
+.feature-card {
+  background-color: #fff; /* Card background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 250px; /* Ensures uniform height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: flex-start;
+  /* Remove margin-right to prevent extra spacing */
+  margin-bottom: 0; /* Already handled by Bootstrap gutter */
+}
+
+.cards {
+  /* Remove flexbox styles */
+  padding: 0; /* Ensure no padding interferes */
+  display: block; /* Use default block layout for container */
+}
+
+.feature-card h3 {
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+  margin-bottom: 15px;
+  margin-top: 0; 
+}
+
+.feature-card p {
+  margin: 0; /* Remove default margin */
+}
+
+
+h2{
+  display: flex;
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #fc72fc, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
 @keyframes animate-gradient {
   to{
     background-position: 200%;
@@ -30,6 +82,15 @@ h1{
   font-style: normal;
   background-color: white;
   padding: 20px;
+  border-radius: 30px;
+}
+
+.projects{
+  margin-bottom: 3rem !important;
+}
+
+.profile-img{
+  border-radius: 50%;
 }
 
 .navbar{
