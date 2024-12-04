@@ -31,12 +31,6 @@ h1{
   margin-bottom: 0; /* Already handled by Bootstrap gutter */
 }
 
-.cards {
-  /* Remove flexbox styles */
-  padding: 0; /* Ensure no padding interferes */
-  display: block; /* Use default block layout for container */
-}
-
 .feature-card h3 {
   font-family: "Lexend Exa", sans-serif;
   font-optical-sizing: auto;
@@ -50,6 +44,9 @@ h1{
   margin: 0; /* Remove default margin */
 }
 
+.project-img{
+  border: solid white;
+}
 
 h2{
   display: flex;
@@ -109,8 +106,41 @@ h2{
   color: #ffffff !important; 
 }
 
+.project-img {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px; /* Rounded corners */
+  padding: 5px; /* Space for the gradient border */
+  background: linear-gradient(to right, #fc72fc, #8f68ff, #487bff, #8f68ff, #fc72ff); /* Initial gradient */
+  background-size: 200% 200%; /* Allow gradient to animate smoothly */
+  animation: gradient-animation 3s linear infinite; /* Apply animation */
+}
+
+.project-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Match the border-radius minus padding */
+  object-fit: cover; /* Maintain aspect ratio */
+  background: white; /* Prevent gradient bleeding through the image */
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradient-animation {
+  to{
+    background-position: 200%;
+  }
+}
+
+.copyright{
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  color: white;
+}
+
 .menu-text{
-font-family: "Lexend Exa", sans-serif;
+  font-family: "Lexend Exa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 30px;
   font-style: normal;
